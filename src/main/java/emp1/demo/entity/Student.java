@@ -16,6 +16,11 @@ public class Student {
     private String name;
     private String course;
     private String email;
+
+	public Student{
+		int appp=9090;
+		
+	}
 	public Long getId() {
 		return id;
 	}
