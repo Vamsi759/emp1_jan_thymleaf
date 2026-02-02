@@ -17,7 +17,7 @@ public class Student {
     private String course;
     private String email;
 
-	public Student{
+	public Student(){
 		int appp=9090;
 		
 	}
