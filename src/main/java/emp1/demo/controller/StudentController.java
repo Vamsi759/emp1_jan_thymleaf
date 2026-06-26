@@ -33,14 +33,14 @@ public class StudentController {
     @PostMapping("/add")
     public String save(@ModelAttribute StudentDto dto) {
     	studentService.save(dto);
-    	return "redirect:/students";
+    	return "redirect:/students/open";
     	
     }
     
     @PostMapping("/edit/{id}")
     public String update(@PathVariable Long id,@ModelAttribute StudentDto dto) {
     	studentService.update(id, dto);
-    	return "redirect:/students";
+    	return "redirect:/students/open";
     }
     
 
@@ -55,7 +55,7 @@ public class StudentController {
     @GetMapping("/delete/{id}")
     public String deleteStudent(@PathVariable Long id) {
         studentService.delete(id);
-        return "redirect:/students";
+        return "redirect:/students/open";
     }
 }
 
