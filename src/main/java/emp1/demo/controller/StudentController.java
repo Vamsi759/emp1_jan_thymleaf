@@ -19,7 +19,7 @@ public class StudentController {
     @Autowired
     private StudentService studentService;
 
-    @GetMapping
+    @GetMapping("/open")
     public String listStudents(Model model) {
         model.addAttribute("students", studentService.getAll());
         return "students"; // students.html
